@@ -1,32 +1,35 @@
 # 🌀 Tricking Progress RPG – Database & System Design
 
-Tricking Progress RPG es una aplicación diseñada para que los atletas de *tricking* puedan registrar su progreso, aprender trucos, crear combos y recibir recomendaciones personalizadas.  
-La app funciona como un **RPG**, donde el usuario obtiene experiencia, sube de nivel y mejora estadísticas a medida que entrena.
+**Tricking Progress RPG** is an application designed for tricking athletes to track their progress, learn tricks, build combos, and receive personalized recommendations.  
+The app functions like an **RPG**, where the user gains experience, levels up, and improves stats as they train.
 
 ---
 
-## 📌 Características principales
+## 📌 Main Features
 
-- Registro de trucos aprendidos por el usuario.
-- Dominio y nivel de maestría para cada truco.
-- Sistema de experiencia y niveles estilo RPG.
-- Creación de combos y secuencias de trucos.
-- Recomendación de combos según habilidades del usuario.
-- Registro detallado de sesiones de práctica.
-- Tracking de intentos, éxitos y variaciones.
-- Clasificación por categoría, dificultad y variaciones.
-- Estadísticas por usuario (trucos aprendidos, variaciones dominadas, combos, etc).
+- Tracking of tricks learned by the user.
+- Mastery level and proficiency for each trick.
+- RPG-style experience and leveling system.
+- Creation of combos and trick sequences.
+- Combo recommendations based on the user’s skillset.
+- Detailed logs of practice sessions.
+- Tracking attempts, successful landings, and variations.
+- Classification by category, difficulty, and variations.
+- User statistics (learned tricks, mastered variations, combos, etc.).
 
 ---
 
-## 🗂️ Modelo de Base de Datos
+## 🗂️ Database Model
 
-El proyecto utiliza un modelo relacional con enfoque en:
+The project uses a relational database model with a focus on:
 
-- **Entidades principales:** User, Trick, Combo  
-- **Tablas puente:** UserTrick, ComboTrick, UserCombo  
-- **Sistema de práctica:** Practice, PracticeDetails  
-- **Clasificación:** Category, Difficulty, Variation  
+- **Main entities:** `User`, `Trick`, `Combo`
+- **Bridge tables:** `UserTrick`, `ComboTrick`, `UserCombo`
+- **Practice system:** `Practice`, `PracticeDetails`
+- **Classification:** `Category`, `Difficulty`, `Variation`
 
-### 📎 Diagrama ER
-<img width="1275" height="723" alt="image" src="https://github.com/user-attachments/assets/b8a2dd5e-0646-4f8b-89f3-5697dbdc97c4" />
+---
+
+## 📎 ER Diagram
+
+![ER Diagram](https://github.com/user-attachments/assets/b8a2dd5e-0646-4f8b-89f3-5697dbdc97c4)
